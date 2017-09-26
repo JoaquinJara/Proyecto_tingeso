@@ -1,0 +1,32 @@
+<div class="panel col-md-12">
+    <h1>Lista Estudiantes</h1>
+    
+     <ul>
+        <li ng-repeat="student in students">{{ student.name | capitalize }}</li>
+     </ul> 
+</div>
+
+<div class="col-md-12">
+    <h1>Agregar Estudiante</h1>
+    <h3>Rut: </h3>
+    <input type="text" ng-model="newStudent.rut">
+</div>
+<div class="col-md-12">
+    <h3>Nombre: </h3>
+    <input type="text" ng-model="newStudent.name">
+</div>
+<div class="col-md-12">
+    <h3>Correo-e: </h3>
+    <input type="text" ng-model="newStudent.mail">
+</div>
+<div class="col-md-12">
+    <h3>Programa: </h3>
+    <input type="text" ng-model="newStudent.program">
+</div>
+<div class="col-md-12">
+    <h3>Año de ingreso: </h3>
+    <input type="text" ng-model="newStudent.year">
+</div>
+<div class="col-md-12">
+    <input ng-click="send()" type="button" value="Ingresar Estudiante">
+</div>  
